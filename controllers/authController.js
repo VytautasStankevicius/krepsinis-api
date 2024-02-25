@@ -59,6 +59,20 @@ exports.login = async (req, res) => {
     }
 }
 
+// exports.logout = async (req, res) => {
+//     try{
+//       await User.findOneAndUpdate({_id: req.user._id}, {accessToken: ""})
+//       res.status(200).json({
+//         status: "Success",
+//       })
+//     }catch(err){
+//         res.status(400).json({
+//         status: "Fail",
+//         message: err.message,
+//       });
+//     }
+//   }
+
 exports.protect = async (req, res, next) => {
     // 1. get token
     let token;
