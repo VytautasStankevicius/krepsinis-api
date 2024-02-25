@@ -59,6 +59,7 @@ exports.login = async (req, res) => {
     }
 }
 
+
 // exports.logout = async (req, res) => {
 //     try{
 //       await User.findOneAndUpdate({_id: req.user._id}, {accessToken: ""})
